@@ -1,0 +1,171 @@
+/* Piezas propias de esta charla. Van aparte para no tocar los estilos del motor. */
+
+:root {
+	--acento: #32a;
+	--fondo-tarjeta: #f1effa;
+}
+
+/* Texto a un lado, imagen grande al otro */
+.dos-columnas {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3vw;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.dos-columnas.imagen-primero {
+	grid-template-columns: 1.2fr 1fr;
+}
+
+.dos-columnas ul,
+.dos-columnas ol {
+	margin: 0;
+}
+
+.dos-columnas li {
+	margin-bottom: 0.5em;
+}
+
+.visual {
+	height: 62vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.visual img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+/* Una imagen que aparece con un paso y tapa a la anterior: se coloca encima de
+   la columna derecha. Va dentro del paso para salir y ocultarse con él. */
+.cambia {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: calc(50% - 1.5vw);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--background-global);
+}
+
+.cambia img {
+	max-width: 100%;
+	max-height: 62vh;
+	object-fit: contain;
+}
+
+.pie {
+	display: block;
+	margin-top: 0.4em;
+	font-size: 0.7em;
+	font-weight: normal;
+	text-align: center;
+}
+
+/* Tarjetas de la diapositiva de lecciones */
+.tarjetas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2vw;
+	width: 100%;
+	counter-reset: tarjeta;
+}
+
+.tarjeta {
+	counter-increment: tarjeta;
+	background: var(--fondo-tarjeta);
+	border-top: 0.4em solid var(--acento);
+	border-radius: 0.4em;
+	padding: 1em;
+	min-height: 40vh;
+}
+
+.tarjeta::before {
+	content: counter(tarjeta);
+	display: block;
+	font-size: 2.4em;
+	line-height: 1;
+	color: var(--acento);
+	margin-bottom: 0.3em;
+}
+
+.tarjeta strong {
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+	color: var(--acento);
+}
+
+.tarjeta span {
+	font-weight: normal;
+}
+
+/* Cifras grandes */
+.cifras {
+	width: 100%;
+}
+
+.cifras-fila {
+	display: flex;
+	justify-content: center;
+	gap: 5vw;
+}
+
+.cifra {
+	text-align: center;
+}
+
+.numero {
+	display: block;
+	font-size: 3em;
+	line-height: 1.1;
+	color: var(--acento);
+}
+
+.etiqueta {
+	display: block;
+}
+
+.fecha {
+	display: block;
+	text-align: center;
+	margin-top: 0.6em;
+	font-size: 0.6em;
+	font-weight: normal;
+}
+
+/* Logotipos */
+.logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5vw;
+	flex-wrap: wrap;
+	margin-top: 1em;
+}
+
+.logos img {
+	height: 7vh;
+	width: auto;
+}
+
+talk-info .logos {
+	order: 2;
+}
+
+/* En la diapositiva de cierre, los logotipos sobre una banda blanca para que se distingan. */
+rc-slide.section .logos {
+	background: #fff;
+	padding: 0.6em 1.2em;
+	border-radius: 0.4em;
+}
