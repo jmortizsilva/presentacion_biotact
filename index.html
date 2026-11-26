@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BioTact: la Biología también se toca. a11yConf Zaragoza 2026</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<script src="./js/RCPresentation.js"></script>
+	<script src="./js/RCSection.js"></script>
+	<script src="./js/RCSlide.js"></script>
+	<script src="./js/ControllerKeyboard.js"></script>
+	<script src="./js/NotifierLive.js"></script>
+	<script src="./js/FullScreen.js"></script>
+</head>
+
+
+<body>
+	<rc-presentation start="1" color="normal">
+
+		<!-- DIAPOSITIVA 1. PORTADA (≈20 s) -->
+		<rc-slide class="cover">
+			<h1>
+				BioTact
+				<sub-heading>La Biología también se toca</sub-heading>
+			</h1>
+			<content-box>
+				<cover-image>
+					<img src="./img/celula-3d-tactonom.png" alt="Una mano señala con el índice el núcleo de un modelo 3D blanco de una célula vegetal, colocado sobre la superficie del Tactonom.">
+				</cover-image>
+				<talk-info>
+					<talk-speaker>
+						<speaker-name>Jose María Ortiz Silva</speaker-name>
+						<speaker-social>ONCE</speaker-social>
+					</talk-speaker>
+					<talk-event>
+						<event-name>a11yConf · Lightning talk</event-name>
+						<event-date>Zaragoza · 28 de noviembre de 2026</event-date>
+					</talk-event>
+				</talk-info>
+			</content-box>
+			<step>Hola. Soy Jose María, de la ONCE.</step>
+			<step>En cinco minutos os cuento BioTact: un proyecto europeo para que el alumnado ciego estudie Biología tocando, escuchando y leyendo en braille.</step>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 2. EL PROBLEMA (≈35 s) -->
+		<rc-slide>
+			<h2>La Biología se aprende mirando</h2>
+			<content-box>
+				<ul>
+					<li><span aria-hidden="true">Células, órganos y procesos se explican con imágenes.</span><x>Pensad en una clase de Biología: una célula, un corazón, el aparato digestivo. Casi todo se explica con dibujos.</x></li>
+					<li><span aria-hidden="true">Para el alumnado ciego, la barrera no suele ser el concepto, sino cómo se representa.</span><x>Para un estudiante ciego, muchas veces el problema no es entender el concepto. Es llegar a él.</x></li>
+					<li><span aria-hidden="true">Faltan gráficos accesibles, y un dibujo con relieve no basta.</span><x>Faltan gráficos accesibles. Y un dibujo pensado para la vista no se vuelve comprensible solo con ponerle relieve.</x></li>
+				</ul>
+			</content-box>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 3. QUÉ ES BIOTACT (≈40 s) -->
+		<rc-slide>
+			<h2>Qué es BioTact</h2>
+			<content-box>
+				<ul>
+					<li><span aria-hidden="true">Proyecto Erasmus+, de septiembre de 2024 a agosto de 2027.</span><x>BioTact es un proyecto Erasmus+ que empezó en septiembre de 2024 y termina en agosto de 2027.</x></li>
+					<li><span aria-hidden="true">Cinco entidades de Alemania, España, Polonia y Portugal.</span><x>Somos cinco entidades de cuatro países.</x></li>
+<step>Inventivio, en Alemania, coordina y pone la tecnología.</step>
+<step>ProBlind, también alemana, la plataforma donde se publica.</step>
+<step>ANV Production, en Polonia, modela en 3D.</step>
+<step>Profesorado de Biología de un centro de Portugal aporta la materia y el aula.</step>
+<step>Y la ONCE diseña y prueba los materiales con alumnado ciego.</step>
+					<li><span aria-hidden="true">Meta: 600 gráficos táctiles y 100 modelos 3D, en abierto.</span><x>La meta: seiscientos gráficos táctiles y cien modelos 3D, en abierto.</x></li>
+					<li><span aria-hidden="true">Y una guía pedagógica para enseñar Biología de forma inclusiva.</span><x>Y una guía pedagógica para que el profesorado los use en clase.</x></li>
+				</ul>
+			</content-box>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 4. CÓMO FUNCIONA (≈45 s) -->
+		<rc-slide>
+			<h2>Cómo funciona: el Tactonom</h2>
+			<content-box>
+				<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2em; width: 100%;">
+					<ol style="flex: 1;">
+						<li><span aria-hidden="true">Se coloca una lámina en relieve o un modelo 3D.</span><x>El Tactonom es una superficie con una cámara encima. Sobre ella se coloca una lámina en relieve o un modelo 3D.</x></li>
+						<li><span aria-hidden="true">Un código QR identifica el material.</span><x>Un código QR le dice qué material es.</x></li>
+						<li><span aria-hidden="true">La cámara sigue el dedo.</span><x>El alumno explora primero con las manos, libremente. Cuando señala con un dedo, la cámara lo detecta.</x></li>
+						<li><span aria-hidden="true">Cada zona se escucha y se lee en braille.</span><x>Y escucha qué es esa zona. El mismo texto le llega a la línea braille, que es clave para el alumnado sordociego.</x></li>
+						<li><span aria-hidden="true">Guía hasta un elemento y actividades con respuesta inmediata.</span><x>También puede pedir que le guíe hasta un elemento, o resolver actividades con respuesta inmediata.</x></li>
+					</ol>
+					<img src="./img/lamina-subsistemas.png" alt="Lámina en relieve titulada Subsistemas terrestres, con el título en braille y en tinta, un árbol, una nube y rocas unidos por flechas. Un alumno señala una roca con el índice." style="max-width: 38%; max-height: 55vh; object-fit: contain;">
+				</div>
+			</content-box>
+			<step>Lo importante no es la cámara: es juntar relieve, audio y braille, y que sea el estudiante quien pide la información cuando la necesita.</step>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 5. MODELOS 3D (≈25 s) -->
+		<rc-slide>
+			<h2>Cuando un dibujo no basta: modelos 3D</h2>
+			<content-box>
+				<div style="display: flex; flex-direction: row; justify-content: center; gap: 1.5em; width: 100%;">
+					<img src="./img/modelo-intestino.jpg" alt="Modelo 3D de una sección del intestino delgado, visto desde arriba y de lado, con las vellosidades del interior en relieve." style="max-width: 46%; max-height: 50vh; object-fit: contain;">
+					<img src="./img/modelo-erizo.jpg" alt="Modelo 3D de un erizo sobre una base redonda, con las púas en relieve." style="max-width: 46%; max-height: 50vh; object-fit: contain;">
+				</div>
+			</content-box>
+			<step>Para lo que tiene volumen, como una célula, una mitocondria o el intestino, se imprimen modelos 3D que funcionan igual sobre el Tactonom.</step>
+			<step>En las primeras pruebas, alumnado y profesionales los valoraron como un buen complemento a la explicación del profesor.</step>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 6. LO QUE APRENDIMOS (≈70 s) -->
+		<rc-slide>
+			<h2>Lo que solo aparece al probarlo</h2>
+			<step>Esto es lo que más me interesa contaros. Ningún material se da por terminado al diseñarlo: se prueba con alumnado ciego y, si hace falta, vuelve atrás.</step>
+			<content-box>
+				<ul>
+					<li><span aria-hidden="true">El delfín, mejor con la cabeza levantada: se toca también por debajo.</span><x>El modelo del delfín: lo preferían con la cabeza levantada, no apoyado entero en la base, porque así se toca también por debajo.</x></li>
+					<li><span aria-hidden="true">Las figuras 3D necesitan una marca para saber cómo colocarlas.</span><x>Las figuras 3D necesitaban una marca para saber en qué posición colocarlas.</x></li>
+					<li><span aria-hidden="true">Un ribosoma escondido se movió para que su zona fuera más fácil de encontrar.</span><x>Un ribosoma estaba escondido en una esquina. Se movió para que su zona fuera más grande y fácil de encontrar.</x></li>
+					<li><span aria-hidden="true">La voz sintética leía mal «reemite»: el texto se escribe para oírse.</span><x>La voz sintética leía mal la palabra reemite, y cortaba frases donde no debía. El texto se escribe para oírse, no solo para leerse.</x></li>
+					<li><span aria-hidden="true">El braille decía cosas distintas que el audio: se revisan juntos.</span><x>Y el braille a veces decía algo distinto que el audio. Ahora se revisan juntos.</x></li>
+				</ul>
+			</content-box>
+			<step>Nada de esto se ve en un diseño en pantalla. Aparece cuando una persona ciega lo toca.</step>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 7. DÓNDE ESTAMOS (≈35 s) -->
+		<rc-slide>
+			<h2>Dónde estamos</h2>
+			<content-box>
+				<ul>
+					<li><span aria-hidden="true">Más de 60 láminas publicadas en seis temas.</span><x>Ya hay más de sesenta láminas publicadas, en seis temas: de la mitosis al aparato digestivo.</x></li>
+					<li><span aria-hidden="true">Curso 2026-2027: pruebas en centros de la ONCE de toda España, de 4.º de Primaria a la universidad.</span><x>Y este curso estamos probando en centros de la ONCE de toda España, con alumnado desde cuarto de Primaria hasta la universidad.</x></li>
+					<li><span aria-hidden="true">En tres días, más de 40 gráficos probados.</span><x>En los tres primeros días se probaron más de cuarenta gráficos.</x></li>
+					<li><span aria-hidden="true">No se evalúa cuánta Biología sabe el alumno, sino si puede usar el material solo.</span><x>No evaluamos cuánta Biología sabe el alumno. Evaluamos si el material se explora bien, si se reconoce, si se entiende y si lo puede usar solo.</x></li>
+				</ul>
+			</content-box>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 8. PROBLIND (≈35 s) -->
+		<rc-slide>
+			<h2>Abierto en ProBlind</h2>
+			<content-box>
+				<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 2em; width: 100%;">
+					<ul style="flex: 1;">
+						<li><span aria-hidden="true">Plataforma gratuita de gráficos táctiles.</span><x>Todo se publica en ProBlind, una plataforma gratuita de gráficos táctiles.</x></li>
+						<li><span aria-hidden="true">Clonar, traducir, revisar y adaptar.</span><x>Un profesor puede clonar una lámina, traducirla automáticamente a su idioma, revisar textos y audios, y adaptarla a su clase. Sin empezar de cero.</x></li>
+						<li><span aria-hidden="true">Busca la etiqueta BioTact.</span><x>Los materiales del proyecto llevan la etiqueta BioTact.</x></li>
+						<li><span aria-hidden="true">Y no solo Biología.</span><x>Y no es solo para Biología: cualquiera puede crear láminas de cualquier materia.</x></li>
+					</ul>
+					<img src="./img/problind.png" alt="Página de búsqueda de ProBlind con 1294 gráficos táctiles. Entre los resultados hay modelos 3D de BioTact, como centrosoma, mitocondrias y células animal y vegetal." style="max-width: 50%; max-height: 55vh; object-fit: contain;">
+				</div>
+			</content-box>
+		</rc-slide>
+
+		<!-- DIAPOSITIVA 9. CIERRE (≈20 s) -->
+		<rc-slide class="section">
+			<h2>Lo que había que mirar, ahora se puede tocar</h2>
+			<content-box>
+				<ul>
+					<li><span aria-hidden="true">biotact.eu</span><x>Tenéis más en biotact.eu</x></li>
+					<li><span aria-hidden="true">share.problind.org</span><x>y los materiales en share.problind.org.</x></li>
+				</ul>
+				<step>Para cerrar: la novedad de BioTact no es enseñar Biología con una tecnología nueva.</step>
+				<step>Es que lo que había que mirar se pueda tocar, explorar y entender sin depender de nadie.</step>
+				<step>Muchas gracias.</step>
+			</content-box>
+		</rc-slide>
+
+	</rc-presentation>
+
+	<controller-keyboard>
+		PageUp | set-step: prev
+		PageDown | set-step: next
+		. | notify-live: _repeat_
+
+		Home | set-slide: first
+		End | set-slide: last
+		Space | set-step: next
+		ArrowLeft | set-step: prev
+		ArrowRight | set-step: next
+		ArrowUp | notify-live: _time_
+		ArrowDown | notify-live: _repeat_
+		f | set-fullscreen: toggle
+
+		Shift+ArrowLeft | set-slide: prev
+		Shift+ArrowRight | set-slide: next
+		Shift+PageUp | set-slide: prev
+		Shift+PageDown | set-slide: next
+	</controller-keyboard>
+	<notifier-live hide></notifier-live>
+	<full-screen></full-screen>
+</body>
+
+</html>
