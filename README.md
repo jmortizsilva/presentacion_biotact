@@ -1,4 +1,4 @@
-# BioTact: la Biología también se toca
+# BioTact: biología que se toca
 
 Lightning talk de cinco minutos para la a11yConf de Zaragoza, 28 de noviembre de 2026.
 Autor: Jose María Ortiz Silva.

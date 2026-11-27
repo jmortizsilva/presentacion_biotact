@@ -169,3 +169,10 @@ rc-slide.section .logos {
 	padding: 0.6em 1.2em;
 	border-radius: 0.4em;
 }
+
+/* El motor deja un 20 % de margen sobre el título de la portada, que se veía
+   como una banda blanca encima de la barra azul. */
+rc-slide.cover h1 {
+	margin-top: 0 !important;
+	border-top: none !important;
+}
